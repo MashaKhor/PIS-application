@@ -8,13 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Interface
+namespace Interface.Schedule
 {
-    public partial class Form1 : Form
+    public partial class PlanScheduleOne : Form
     {
-        public Form1()
+        public PlanScheduleOne()
         {
             InitializeComponent();
+            testFunction();
+        }
+
+        private void testFunction()
+        {
+            dataGridView1.Rows.Add("Январь", "02.01.2023", "27.01.2023", "12");
         }
     }
 }
